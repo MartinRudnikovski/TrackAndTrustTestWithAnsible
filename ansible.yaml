@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+
+  tasks:
+    - name: Install app
+      copy:
+        src: App
+        dest: /
+        owner: root
+        group: root
